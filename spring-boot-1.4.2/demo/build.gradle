@@ -1,0 +1,51 @@
+buildscript {
+    ext {
+        springBootVersion = '1.4.2.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'demo'
+    version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile("org.projectlombok:lombok:1.12.2")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+//    compile("org.springframework.boot:spring-boot-starter-security")
+
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("org.springframework.boot:spring-boot-starter-aop")
+
+    compile("org.mybatis:mybatis:3.3.1")
+    compile("org.mybatis:mybatis-spring:1.2.4")
+    compile("org.apache.tomcat:tomcat-jdbc:7.0.50")
+    compile('mysql:mysql-connector-java:5.1.16')
+
+//    configurations {
+//        all*.exclude group:'org.springframework.boot',
+//                module:'spring-boot-starter-logging'
+//    }
+//    compile("org.springframework.boot:spring-boot-starter-log4j")
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
