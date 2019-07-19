@@ -1,0 +1,5 @@
+zuul/ZuulServerApplication.class
+zuul/ServiceHystric.class
+zuul/LoginFilter.class
+zuul/HiController.class
+zuul/ServiceHiProxy.class

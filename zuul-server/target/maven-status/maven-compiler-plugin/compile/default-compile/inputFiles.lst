@@ -1,0 +1,5 @@
+/Users/king/Code/springboot/zuul-server/src/main/java/zuul/ZuulServerApplication.java
+/Users/king/Code/springboot/zuul-server/src/main/java/zuul/HiController.java
+/Users/king/Code/springboot/zuul-server/src/main/java/zuul/LoginFilter.java
+/Users/king/Code/springboot/zuul-server/src/main/java/zuul/ServiceHiProxy.java
+/Users/king/Code/springboot/zuul-server/src/main/java/zuul/ServiceHystric.java
